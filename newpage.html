@@ -6,13 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="manifest" href="manifest copy.json">
-    <script src="Build\Build.loader.js" type="module"></script>
+    
     <title>The sky is falling</title>
 </head>
 <body>
-
-    <canvas id="glcanvas" width="640" height="480"></canvas>
-  
-
+    <div id="unityContainer" style="width: 800px; height: 750px;"></div>
+        <script>
+          var buildUrl = "Build"; // Replace with the actual path to your WebGL build folder
+        
+          // Initialize UnityLoader
+          var script = document.createElement("script");
+          script.src = buildUrl + "UnityLoader.js";
+          document.body.appendChild(script);
+        
+          // Create UnityInstance
+          var config = {
+            dataUrl: buildUrl + "UnityLoader.data",
+            frameworkUrl: buildUrl + "UnityLoader.framework.js",
+            codeUrl: buildUrl + "UnityLoader.wasm",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "TPC-Tech",
+            productName: "Crate Crash",
+            productVersion: "1.0",
+          };
+        
+          var container = document.getElementById("unityContainer");
+          var unityInstance = UnityLoader.instantiate(container, buildUrl + "UnityLoader.json", config);
+        </script>
+        
 </body>
 </html>
