@@ -1,6 +1,6 @@
 {
-    "name": "TPC",
-    "short_name": "SName",
+    "name": "TPCV2",
+    "short_name": "SNameV2",
     "start_url": "index.html",
     "scope": "./",
     "icons": [
