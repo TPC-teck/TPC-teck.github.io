@@ -1,0 +1,22 @@
+{
+    "name": "TPC",
+    "short_name": "Game",
+    "start_url": "index.html",
+    "scope": "./",
+    "icons": [
+      {
+        "src": "TPCLogo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "TPCLogo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#AD613A",
+    "background_color": "#333",
+    "display": "standalone",
+    "orientation": "landscape"
+  }
