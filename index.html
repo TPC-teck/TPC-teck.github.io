@@ -6,19 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json">
-    <title>LearningSite</title>
+    <title>GameTesting</title>
 </head>
 <body>
     
-    <img src="TPCLogo.png" alt="TPCLogo.png">
-    <h1>
-     #
-    </h1>
-    <p class="okbob">
-        Today is good
-        and i like?
-    </p>
-    <a href="newpage.html">Link to New Page</a>
-    <a href="Build\index.html">Crate Crash</a>
+    <p>Enter Password:</p>
+    <input type="text" id="myInput" onchange="myFunction()">
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myInput").value;
+          if (x == "Timmy00"){
+            window.location.href = "Main.html";
+          }
+        }
+    </script>
+
+
 </body>
 </html>
